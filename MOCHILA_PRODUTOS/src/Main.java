@@ -2,9 +2,24 @@
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Teste 2 de Commit a partir do GitHub");
 
-    System.out.println("Teste 21/10/2022 de Commit a partir do Replit");
+    
+  /*
+LER O ARQUIVO E SEPARAR POR VIRGULA
+
+
+3 VETORES
+1 NOME
+2VALOR
+3 PESO
+
+4 RESULTADO ( PASSAR UM FOR PARA VERIFICAR SE LEVA OU NÃO{ 0 OU 1} COM
+1 VARIAVEL CAPACIDADE DA MOCHILA( DENTRO DE UM FOR COM IF ELSE))
+
+    */
+
+
+    
 	}
 
 }
