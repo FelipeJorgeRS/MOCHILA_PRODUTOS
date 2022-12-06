@@ -1,0 +1,89 @@
+		import java.io.BufferedReader;
+		import java.io.FileNotFoundException;
+		import java.io.FileReader;
+		import java.io.File;
+		import java.io.FileWriter;
+		import java.io.IOException;
+	//ver a necessidade	 do // throws IOException;
+		
+		public class LeitorDeArquivo {
+
+	 
+								
+
+				String CaminhoArquivo = "C:\\Users\\Felipe Jorge\\Documents\\UNA\\IA INTELIGENCIA ARTIFICIAL\\Instâncias-20220928T233124Z-001\\instancias-mochila\\";
+				String NomeArquivo = "KNAPDATA40.txt";
+				String LinhaDividida []  = new String[3];
+				String Linha = "";
+				
+				
+
+				int Quantidade=0;
+				int Capacidade=0;
+				int IdObjeto=0;
+				int Custo=0;
+				int Beneficio=0;
+				int Solucao =0 ;
+				
+				//HeuristicaGulosa heuristica = new HeuristicaGulosa();
+				
+				BufferedReader bufferRead = new BufferedReader(new FileReader(CaminhoArquivo+NomeArquivo))throws IOException; {
+		
+
+				
+				Quantidade =Integer.parseInt(bufferRead.readLine());
+				
+				Linha = bufferRead.readLine();
+				do{
+					
+					if(Linha.startsWith("15"))
+						LinhaDividida = Linha.split(",");
+					
+				
+				}
+				while ( ( Linha = bufferRead.readLine() ) != null);
+					{
+				        //Aqui imprimimos a linha
+				        System.out.println(Linha); 
+				        
+					  }
+				        IdObjeto =Integer.parseInt(LinhaDividida[0]);
+						Custo = Integer.parseInt(LinhaDividida[1]);
+						Beneficio = Integer.parseInt(LinhaDividida[2]);
+						
+						
+				    
+				
+				 	bufferRead.close(); 
+				 	}
+				 	
+				
+				
+				
+				 	public String getCaminhoArquivo() {
+
+						return CaminhoArquivo;
+
+						}
+				 	
+				 	/*
+				
+				 	idObjeto =Integer.parseInt(linhaDividida[0]);
+					custo = Integer.parseInt(linhaDividida[1]);
+					beneficio = Integer.parseInt(linhaDividida[2]);
+					bufferRead.close();
+					
+					System.out.println("Instancia(idObjeto): " + nomeArquivo);
+					System.out.println("custo: " + custo);
+					System.out.println("Benefício: " + beneficio);
+					
+					System.out.println("\nSolução: " ); 
+					heuristica.imprimeSolucao(); 
+					
+					*/
+
+		}// fim da classe LeitorDeArquivo
+		
+		
+		
+		
